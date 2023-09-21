@@ -1,0 +1,4 @@
+Material Name,Density,Elastic Modulus [MPa],Possions' Ratio
+Steel,7.8e-09,200000.0,0.3
+Aluminum,2.7e-09,70000.0,0.233
+Brass,8.48e-09,97000.0,0.31
