@@ -37,8 +37,6 @@ def writeToWB(wb, sheet, startPos, endPos, data):
     for thisRow in range(startPos[1], endPos[1]+1):
         for thisColumn in range(startPos[0], endPos[0]+1):
             wb.Sheets(sheet).Cells(thisRow, thisColumn).Value = data[index]   
-            print(index, data[index])
-            print(thisRow, thisColumn)
             index += 1
     return True
     
