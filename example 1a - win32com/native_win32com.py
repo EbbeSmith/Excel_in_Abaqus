@@ -63,7 +63,7 @@ def main():
         writeToWB(wb, "Ark1", convertCellDef("D13"), convertCellDef("G16"), dataFromExcel)
   
     except: 
-        print "Error during Reading or Writing :: Shutting Down!" 
+        print("Error during Reading or Writing :: Shutting Down!")
     
     # Save changes and close object
     wb.Close(SaveChanges=1)
