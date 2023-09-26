@@ -29,6 +29,7 @@ def main():
     # Read From File
     with open(csvFileName, 'rb') as csvfile: 
         reader = csv.reader(csvfile)
+        next(reader, None)  # Skip headers
         for row in reader:
             print(row)
 

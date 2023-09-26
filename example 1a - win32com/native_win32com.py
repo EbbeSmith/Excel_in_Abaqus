@@ -59,12 +59,14 @@ def main():
         # Write Data - 2D Array
         dataFromExcel = [x*3 for x in dataFromExcel]            
         writeToWB(wb, "Ark1", convertCellDef("D13"), convertCellDef("G16"), dataFromExcel)
+
+        # Save changes and close object
+        wb.Close(SaveChanges=1)
   
     except: 
         print("Error during Reading or Writing :: Shutting Down!")
     
-    # Save changes and close object
-    wb.Close(SaveChanges=1)
+
     xl.Quit()
     
     return True
