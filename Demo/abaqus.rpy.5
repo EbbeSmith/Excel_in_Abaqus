@@ -1,0 +1,52 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2023 replay file
+# Internal Version: 2022_09_28-20.11.55 183150
+# Run by ebsm01 on Sun Oct  8 20:19:54 2023
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=113.591674804688, 
+    height=104.185180664062)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile(
+    'C:/Users/ebsm01/OneDrive - TECHNIA AB/Dokument/Repos/Excel_in_Abaqus-1/Demo/ReadMaterialsFromExcel.py', 
+    __main__.__dict__)
+#: Material Name = PLA
+#: 	Density: 1260
+#: 	Elastic Modulus: 2680
+#: Material Name = PETG
+#: 	Density: 1270
+#: 	Elastic Modulus: 2150
+#: Material Name = PLA+
+#: 	Density: 1260
+#: 	Elastic Modulus: 2330
+#: Material Name = TPU
+#: 	Density: 1210
+#: 	Elastic Modulus: 1000
+#: Material Name = PA
+#: 	Density: 1070
+#: 	Elastic Modulus: 434
+execfile(
+    'C:/Users/ebsm01/OneDrive - TECHNIA AB/Dokument/Repos/Excel_in_Abaqus-1/Demo/ReadMaterialsFromExcel.py', 
+    __main__.__dict__)
+#: Material Name = PLA
+#: 	Density: 1260
+#: 	Elastic Modulus: 2680
+#: Material Name = PETG
+#: 	Density: 1270
+#: 	Elastic Modulus: 2150
+#: Material Name = PLA+
+#: 	Density: 1260
+#: 	Elastic Modulus: 2330
+#: Material Name = TPU
+#: 	Density: 1210
+#: 	Elastic Modulus: 1000
